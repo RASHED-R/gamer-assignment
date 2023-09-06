@@ -25,6 +25,10 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+.gamer-right-card {
+    text-align: right;
+}
+
 a {
     text-decoration: none;
 }
