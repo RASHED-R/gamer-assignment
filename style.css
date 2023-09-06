@@ -1,0 +1,505 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+h1 {
+    font-family: Work Sans;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.common-gradient {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h4 {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+h5 {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+    /* 187.5% */
+}
+
+.padding {
+    padding: 120px 240px;
+}
+
+p {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+}
+
+.common-button {
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+}
+
+.common-button,
+.common-button2 {
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    color: #FFF;
+
+}
+
+.position {
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+}
+
+.fa-circle-play,
+.fa-download,
+.fa-user-group {
+    color: #F948B2;
+    margin-right: 4px;
+}
+
+.common-button2 {
+    background: #4EC5F7;
+}
+
+.nav-items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: 100%;
+    margin-right: 4px;
+}
+
+.logo span {
+    color: #F948B2;
+}
+
+.menu-items li {
+    display: inline-block;
+    margin-right: 32px;
+
+}
+
+.menu-items li a {
+    color: #3C354F;
+}
+
+.follow {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 18px 24px;
+}
+
+.fa-youtube {
+    color: #F61C0D;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.nav-bar {
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 12px 240px;
+}
+
+.play-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    background-image: url(./images/f-s-l.png);
+    background-repeat: no-repeat;
+}
+
+.play-left-card {
+    text-align: left;
+
+}
+
+.play-left-card-title * {
+    text-align: left;
+}
+
+.play-left-card li {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.play-left-card-title {
+    margin-bottom: 24px;
+}
+
+.online-game-heading {
+    display: grid;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.online-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.play-right-card {
+    text-align: right;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.mt-120 {
+    margin-top: 120px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.gamer-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 125px;
+}
+
+.gamer-section img {
+    width: 100%;
+}
+
+.online-card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.online-card-wrapper .online-card-img {
+    position: relative;
+}
+
+.watch-now .fa-circle-play {
+    margin: 0 auto;
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+    border: 4px solid red;
+    border-radius: 20px;
+}
+
+.icon {
+    color: #F948B2;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: grid;
+    gap: 12px;
+}
+
+.icon .fa-circle-play {
+    text-align: center;
+    margin: 0 auto;
+    color: #FFF;
+}
+
+.fa-user:hover {
+    color: #eee;
+}
+
+.watch-now {
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.single-card .watch-now {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.play-instantly-section .img {
+    position: relative;
+}
+
+.play-instantly-section .img .img-itm {
+    position: absolute;
+    left: -100px;
+    bottom: -75px;
+    width: 50%;
+}
+
+.play-instantly-section .play-left-card {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.play-game-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;
+}
+
+.game-1 {
+    width: 100%;
+}
+
+
+.play-instantly-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    align-items: center;
+}
+
+.play-instantly-section .play-left-card-title {
+    text-align: end !important;
+}
+
+.play-game-section .img {
+    position: relative;
+}
+
+.play-game-section .img .img-itm2 {
+    position: absolute;
+    right: -100px;
+    bottom: -75px;
+    width: 50%;
+}
+
+.play-game-section .play-left-card {
+    width: 94%;
+}
+
+.play-game-section {
+    margin-top: 120px;
+}
+
+.career-left-card li {
+    list-style: none;
+}
+
+.careers-section {
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 120px 240px;
+    gap: 24px;
+}
+
+.img-career img {
+    width: 100%;
+}
+
+.img-hero img {
+    width: 100%;
+}
+
+.horse-man {
+    width: 100%;
+}
+
+.careers-left-card-title h2 {
+    color: #fff;
+}
+
+.career-left-card * {
+    color: #fff;
+}
+
+.specialist li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+.address {
+    text-align: end;
+}
+
+.position {
+    background-color: #fff;
+    color: #F948B2;
+}
+
+.sponsors li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/* 
+.sponsors li img {
+    width: 5%;
+} */
+.sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(226px, 1fr));
+    grid-gap: 5px;
+}
+
+.sponsors li {
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    border-radius: 55px;
+    margin-right: 8px;
+    border: 1.5px solid #FFF;
+}
+
+.sponsors li:hover {
+    border-color: #FF42A5;
+}
+
+.footer-section {
+    background-color: #0B0223;
+    text-align: center;
+}
+
+
+.footer-section li {
+    list-style: none;
+}
+
+.footer-logo h3 {
+    color: #fff;
+    margin-left: 8px;
+}
+
+.footer-logo span {
+    color: #F948B2;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-footer,
+.icon-footer,
+.privacy-footer {
+    margin-top: 66px;
+}
+
+.pt120-pb-120 {
+    padding: 120px 0px;
+}
+
+.menu-footer li,
+.icon-footer li,
+.privacy-footer li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.icon-footer li {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.copy-right {
+    color: #fff;
+    margin-top: 28px;
+}
